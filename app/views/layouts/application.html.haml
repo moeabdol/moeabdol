@@ -1,9 +1,35 @@
 !!! 5
-%html
+%html{ lang: "en-US" }
   %head
-  %title Moeabdol
-  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
-  = csrf_meta_tags
-  %body
-    = yield
+    %meta{ charset: "UTF-8" }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1" }
+    %title moeabdol
+    = favicon_link_tag "/favicon.ico?version=1"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  %body.home.blog.dark
+    .switherHead
+    .colored
+      .blue
+      .aqua
+      .green
+      .yellow
+      .red
+
+    #page.hfeed.site
+      %header#header.site_header{ role: "banner" }
+        .social_links
+          %ul
+            %li.tw
+              = link_to "Twitter" , "https://twitter.com/moeabdol",
+                        title: "Twitter", target: "_blank"
+            %li.lnkd
+              = link_to "Linkedin", "https://jp.linkedin.com/in/mohammadsaed",
+                        title: "Linkedin", target: "_blank"
+
+      #main
+        #primary.content_area
+          #content.site_content{ role: "main" }
+            = yield

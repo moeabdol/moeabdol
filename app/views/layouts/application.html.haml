@@ -20,14 +20,24 @@
 
     #page.hfeed.site
       %header#header.site_header{ role: "banner" }
-        .social_links
+        .social_buttons
           %ul
-            %li.tw
-              = link_to "Twitter" , "https://twitter.com/moeabdol",
-                        title: "Twitter", target: "_blank"
-            %li.lnkd
-              = link_to "Linkedin", "https://jp.linkedin.com/in/mohammadsaed",
-                        title: "Linkedin", target: "_blank"
+            %li
+              = link_to "http://stackoverflow.com/users/667127/moeabdol",
+                        title: "Stackoverflow", target: "_blank" do
+                = fa_icon "stack-overflow"
+            %li
+              = link_to "https://github.com/moeabdol",
+                        title: "Github", target: "_blank" do
+                = fa_icon "github"
+            %li
+              = link_to "https://jp.linkedin.com/in/mohammadsaed",
+                        title: "Linkedin", target: "_blank" do
+                = fa_icon "linkedin"
+            %li
+              = link_to "https://twitter.com/moeabdol",
+                        title: "Twitter", target: "_blank" do
+                = fa_icon "twitter"
 
       #main
         #primary.content_area

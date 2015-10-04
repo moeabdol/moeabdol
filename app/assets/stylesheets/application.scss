@@ -9,11 +9,16 @@
 @import "font-awesome";
 
 .icon {
-  display:inline-block !important;
-  font-size: 25px !important;
-  line-height: 55px !important;
-  text-align: center !important;
+  display:block !important;
+  font-size: 28px !important;
+  line-height: 60px !important;
   vertical-align: bottom !important;
+
+  i {
+    position: absolute !important;
+    top: 17px !important;
+    left: 17px !important;
+  }
 }
 
 #header .social_buttons {

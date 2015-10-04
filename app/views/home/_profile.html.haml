@@ -1,0 +1,55 @@
+%section#profile.section.profile_section.first.odd
+  = link_to "#", id: "blog_page_link" do
+    %span.icon.icon-pencil= fa_icon "pencil"
+    %span.label Blog
+
+  .section_header.profile_section_header.opened
+    %h2.section_title.profile_section_title.vis
+      = link_to "#" do
+        %span.icon.icon-user= fa_icon "user"
+        %span.section_name Profile
+      %span.section_icon
+
+    #profile_header
+      #profile_user
+        #profile_photo
+          = image_tag "moeabdol.png"
+
+        #profile_name_area
+          #profile_name
+            %h1#profile_title
+              %span.firstname Mohammad
+              %span.lastname Saed
+
+            %h4#profile_position Computer Scientist
+
+      #profile_data
+        .profile_row.name
+          %span.th Name:
+          %span.td Mohammad Abdullah Saed
+        .profile_row.birth
+          %span.th Date of Birth:
+          %span.td September 7, 1982
+        .profile_row.address
+          %span.th Address:
+          %span.td Riyadh, Saudi Arabia
+        .profile_row.email
+          %span.th Email:
+          %span.td= mail_to "mohd.a.saed@gmail.com"
+        .profile_row.website
+          %span.th Website:
+          %span.td= link_to "http://moeabdol.com","http://moeabdol.com"
+
+  .section_body.profile_section_body
+    .profile_body
+      %p
+        Mohammad (aka moeabdol), 33 years young, born in Egypt and grew up
+        in Saudi Arabia. Highly motivated and creative problem solver. Finds joy
+        in implementing challenging, smart solutions and sharing knowledge with
+        others.
+      %br
+      %p
+        I currently work as a freelance web-developer. I spend most of my time
+        crafting software and molding computer code. I'm a firm believer in the
+        agile methodology, and have been learning and applying its principles
+        throughout my career.

@@ -20,8 +20,8 @@ body.dark { background-color: #141414; color: #878787; }
 .dark .widget_skills .style_1 .progressbar {background: #3b3b3b !important;}
 .dark .widget .widget_title { color: #fff; }
 .dark .widget_skills .caption { color: #878787 !important; }
-.dark .widget_skills .style_3 .progress:after { background: url(../images/level_mask_dark.png) 0 0 repeat-x !important; }
-.dark .widget_skills .style_3 .progressbar { background: url(../images/level_bg_dark.png) 0 0 repeat-x !important; }
+.dark .widget_skills .style_3 .progress:after { background: asset-data-url("shiftcv/level_mask_dark.png") 0 0 repeat-x !important; }
+.dark .widget_skills .style_3 .progressbar { background: asset-data-url("shiftcv/level_bg_dark.png") 0 0 repeat-x !important; }
 
 
 .dark #secondary .widget .widget_twitter li a{ color:#4CA5D0;}
@@ -138,7 +138,7 @@ body.dark { background-color: #141414; color: #878787; }
 .dark #post_author h3 a { color: #fff; }
 .dark .blog_section article .post_title { color: #fff; }
 .dark #commentform label { color: #878787; }
-.dark #comments .comment-list li.comment { background: url(../images/line_hor_dark.gif) 0 0 repeat-x; }
+.dark #comments .comment-list li.comment { background: asset-data-url("shiftcv/line_hor_dark.gif") 0 0 repeat-x; }
 .dark #comments .comment-list li.comment:first-child { background: none; }
 .dark #comments .comment-list li.comment div.photo { border-color: #3b3b3b; }
 .dark #comments .comment-list li.comment h5,
@@ -186,7 +186,7 @@ body.dark { background-color: #141414; color: #878787; }
 .dark div.sc_table table tr:hover td { background: #232323; }
 .dark #profile_data .profile_row a:hover { color: #fff; }
 .dark #mainpage_accordion_area .section_header .section_title:hover { background: #232323; }
-.dark #mainpage_accordion_area .section_body article.post { background: url(../images/line_hor_dark.gif) 0 0 repeat-x; }
+.dark #mainpage_accordion_area .section_body article.post { background: asset-data-url("shiftcv/line_hor_dark.gif") 0 0 repeat-x; }
 .dark #mainpage_accordion_area .section_body article.post.first { background: none; }
 .dark #nav_pages { border-color: #3b3b3b; }
 /****************/

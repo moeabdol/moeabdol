@@ -14,10 +14,199 @@
           .skills_row.odd.first
             %span.caption Ruby on Rails
             %span.progressbar
-              %span{ "data-process": "90%" }
+              %span.progress.red{ "data-process": "90%" }
+                %span.value 90%
 
-      -#%aside.widget.widget_skills
+          .skills_row.even
+            %span.caption Python
+            %span.progressbar
+              %span.progress.green{ "data-process": "95%" }
+                %span.value 95%
 
-      -#%aside.widget.widget_skills
+          .skills_row.odd
+            %span.caption HTML 5
+            %span.progressbar
+              %span.progress.blue{ "data-process": "90%" }
+                %span.value 90%
 
-    -#.wrapper.resume_wrapper
+          .skills_row.even
+            %span.caption CSS 3
+            %span.progressbar
+              %span.progress.yellow{ "data-process": "80%" }
+                %span.value 80%
+
+          .skills_row.odd
+            %span.caption Javascript
+            %span.progressbar
+              %span.progress.aqua{ "data-process": "70%" }
+                %span.value 70%
+
+      %aside.widget.widget_skills
+        %h3.widget_title Engineering Skills
+        .widget_inner.style_2
+          .skills_row.even
+            %span.legend.yellow
+            %span.caption Analysis
+
+          .skills_row.odd
+            %span.legend.aqua
+            %span.caption Critical Thinking
+
+          .skills_row.odd
+            %span.legend.blue
+            %span.caption Design
+
+          .skills_row.odd
+            %span.legend.red
+            %span.caption Quality Assurance
+
+          .skills_row.even
+            %span.legend.green
+            %span.caption Time Managment
+
+          .svg
+            %svg.piechart{ xmlns: "http://www.w3.org/2000/svg" }
+              %path{ d: "M66, 66 L130,66 A64,64 0 0,1 57,129 z",
+                     fill: "#397ea3" }
+              %path{ d: "M66,66 L57, 129 A64,64 0 0,1 2,60 z",
+                     fill: "#4ca5d0" }
+              %path{ d: "M66,66 L2,  60  A64,64 0 0,1 34,11 z",
+                     fill: "#6ca338" }
+              %path{ d: "M66,66 L34, 11  A64,64 0 0,1 103,14 z",
+                     fill: "#ffbc38" }
+              %path{ d: "M66,66 L103,14  A64,64 0 0,1 130,66 z",
+                     fill: "#e82c0c" }
+              %circle{ cx: "66", cy: "66", r: "40", fill: "#ffffff" }
+
+      %aside.widget.widget_skills
+        %h3.widget_title Language Skills
+        .widget_inner.style_3
+          .skills_row.odd.first
+            %span.caption Arabic
+            %span.progressbar
+              %span.progress.red{ "data-process": "100%" }
+
+          .skills_row.odd.even
+            %span.caption English
+            %span.progressbar
+              %span.progress.green{ "data-process": "100%" }
+
+          .skills_row.odd.odd
+            %span.caption Japanese
+            %span.progressbar
+              %span.progress.yellow{ "data-process": "40%" }
+
+    .wrapper.resume_wrapper
+      .category.resume_category.resume_category_1.first.even
+        .category_header.resume_category_header
+          %h3.category_title
+            %span.category_title_icon.aqua
+            Employment
+
+        .category_body.resume_category_body
+          %article.post.resume_post.resume_post_1.first.even
+            .post_header.resume_post_header
+              .resume_period
+                %span.period_from 2010
+                \-
+                %span.period_to 2012
+              %h4.post_title
+                %span.post_title_icon.aqua
+                = link_to "Al-Faisaliah Group", "http://www.alfaisaliah.com",
+                          target: "_blank"
+              %h5.post_subtitle
+                Software Developer
+
+            .post_body.resume_post_body
+              %p
+                Neutra Etsy pug, Carles pour-over Intelligentsia gentrify.
+                Readymade small batch chia freegan, cardigan butcher mumblecore
+                Kickstarter next level artisan roof party Pitchfork. Narwhal
+                church-key leggings gentrify Williamsburg, small batch pickled.
+                Butcher kogi artisan paleo. Art party authentic American Apparel
+                artisan raw denim, pop-up freegan dreamcatcher drinking vinegar
+                Pitchfork scenester locavore paleo. Normcore farm-to-table Highly
+                Life narwhal. Swag jean shorts banh mi lumbersexual Truffaut
+                hashtag.
+
+          %article.post.resume_post.resume_post_2.odd
+            .post_header.resume_post_header
+              .resume_period
+                %span.period_from 2010
+                \-
+                %span.period_to 2010
+              %h4.post_title
+                %span.post_title_icon.aqua
+                = link_to "Saudi Aramco", "http://www.saudiaramco.com/",
+                          target: "_blank"
+              %h5.post_subtitle
+                Software Developer & Engineer
+
+            .post_body.resume_post_body
+              %p
+                Neutra Etsy pug, Carles pour-over Intelligentsia gentrify.
+                Readymade small batch chia freegan, cardigan butcher mumblecore
+                Kickstarter next level artisan roof party Pitchfork. Narwhal
+                church-key leggings gentrify Williamsburg, small batch pickled.
+                Butcher kogi artisan paleo. Art party authentic American Apparel
+                artisan raw denim, pop-up freegan dreamcatcher drinking vinegar
+                Pitchfork scenester locavore paleo. Normcore farm-to-table Highly
+                Life narwhal. Swag jean shorts banh mi lumbersexual Truffaut
+                hashtag.
+
+      .category.resume_category.resume_category_2.odd
+        .category_header.resume_category_header
+          %h3.category_title
+            %span.category_title_icon.green
+            Education
+
+        .category_body.resume_category_body
+          %article.post.resume_post.resume_post_1.first.even
+            .post_header.resume_post_header
+              .resume_period
+                %span.period_from 2012
+                \-
+                %span.period_to 2014
+              %h4.post_title
+                %span.post_title_icon.green
+                = link_to "Keio University", "http://www.keio.ac.jp",
+                          target: "_blank"
+              %h5.post_subtitle
+                Artificial Intelligence
+
+            .post_body.resume_post_body
+              %p
+                Neutra Etsy pug, Carles pour-over Intelligentsia gentrify.
+                Readymade small batch chia freegan, cardigan butcher mumblecore
+                Kickstarter next level artisan roof party Pitchfork. Narwhal
+                church-key leggings gentrify Williamsburg, small batch pickled.
+                Butcher kogi artisan paleo. Art party authentic American Apparel
+                artisan raw denim, pop-up freegan dreamcatcher drinking vinegar
+                Pitchfork scenester locavore paleo. Normcore farm-to-table Highly
+                Life narwhal. Swag jean shorts banh mi lumbersexual Truffaut
+                hashtag.
+
+          %article.post.resume_post.resume_post_2.odd
+            .post_header.resume_post_header
+              .resume_period
+                %span.period_from 2005
+                \-
+                %span.period_to 2010
+              %h4.post_title
+                %span.post_title_icon.green
+                = link_to "Prince Sultan University", "http://www.psu.edu.sa",
+                          target: "_blank"
+              %h5.post_subtitle
+                Computer Science
+
+            .post_body.resume_post_body
+              %p
+                Neutra Etsy pug, Carles pour-over Intelligentsia gentrify.
+                Readymade small batch chia freegan, cardigan butcher mumblecore
+                Kickstarter next level artisan roof party Pitchfork. Narwhal
+                church-key leggings gentrify Williamsburg, small batch pickled.
+                Butcher kogi artisan paleo. Art party authentic American Apparel
+                artisan raw denim, pop-up freegan dreamcatcher drinking vinegar
+                Pitchfork scenester locavore paleo. Normcore farm-to-table Highly
+                Life narwhal. Swag jean shorts banh mi lumbersexual Truffaut
+                hashtag.

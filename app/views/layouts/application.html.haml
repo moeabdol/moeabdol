@@ -43,3 +43,8 @@
         #primary.content_area
           #content.site_content{ role: "main" }
             = yield
+
+    %footer#footer.site_footer{ role: "contentinfo" }
+      .footer_copyright
+        moeabdol.com &copy;
+        = Time.now.strftime("%Y")

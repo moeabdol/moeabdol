@@ -31,3 +31,17 @@
       .contact_form_data
         .sc_contact_form
           %h3.title Let's keep in touch
+          %form
+            .field
+              %label.required Name
+              %input#sc_contact_form_username{ type: "text", name: "username" }
+            .field
+              %label.required Email
+              %input#sc_contact_form_email{ type: "text", name: "email" }
+            .field.message
+              %label.required Your Message
+              %textarea#sc_contact_form_message{ name: "message" }
+            .button
+              = link_to "#", class: "enter" do
+                %span Submit
+          .result.sc_infobox

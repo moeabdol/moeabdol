@@ -23,6 +23,7 @@ group :development do
   gem 'guard', '~> 2.13.0'
   gem 'guard-rspec', '~> 4.6.4', require: false
   gem 'guard-livereload', '~> 2.4.0'
+  gem 'haml-rails', '~> 0.9.0'
 end
 
 gem 'haml', '~> 4.0.7'

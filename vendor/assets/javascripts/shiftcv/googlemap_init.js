@@ -12,7 +12,7 @@ function googlemap_init(dom_obj, address, description, point) {
 	googlemap_init_obj.point = point;
 	googlemap_init_obj.description = description;
 	googlemap_init_obj.opt = {
-		zoom: 16,
+		zoom: 10,
 		center: new google.maps.LatLng(0, 0),
 		scrollwheel: true,
 		scaleControl: false,

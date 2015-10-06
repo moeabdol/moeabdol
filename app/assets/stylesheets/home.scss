@@ -1,3 +1,28 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.portfolio_wrapper {
+  h3.title {
+    color: white;
+    margin-bottom: 27px;
+    position: relative;
+    background: #373737;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 5px 10px 4px 39px;
+    border-radius: 4px 0 0 40x;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    .category_title_icon {
+      border-radius: 3px;
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-image: asset-data-url("shiftcv/section_marker.png");
+      background-position: 9px 11px;
+      background-repeat: no-repeat;
+      content: "";
+      top: 0;
+      left: 0;
+    }
+  }
+}

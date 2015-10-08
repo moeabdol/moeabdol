@@ -60,95 +60,95 @@ jQuery(document).ready(function(){
 	if( $QRsite != null && $QRsite != "" ) { jQuery('#profile_data .website').slideDown() } 
 
 		
-	jQuery(".sc_contact_form .enter").click(function (e) {
-        userSubmitForm();
-        e.preventDefault();
-        return false;
-    });
+	//jQuery(".sc_contact_form .enter").click(function (e) {
+        //userSubmitForm();
+        //e.preventDefault();
+        //return false;
+    //});
 
-    empt = 'Name field can not be empty';
-    to_lng = 'Too long name field';
-    to_lng = 'Too long name field';
-    empt_mail = 'Too short (or empty) email address';
-    to_lng_mail = 'Too long email address';
-    incor = 'Incorrect email address';
-    mes_empt = 'message can not be empty';
-    to_lng_mes = 'Too long message';
+    //empt = 'Name field can not be empty';
+    //to_lng = 'Too long name field';
+    //to_lng = 'Too long name field';
+    //empt_mail = 'Too short (or empty) email address';
+    //to_lng_mail = 'Too long email address';
+    //incor = 'Incorrect email address';
+    //mes_empt = 'message can not be empty';
+    //to_lng_mes = 'Too long message';
 
 	// contact form Validate
-	function userSubmitForm() {
-		var error = formValidate(jQuery(".sc_contact_form form"), {
-			error_message_show: true,
-			error_message_time: 5000,
-			error_message_class: "sc_infobox sc_infobox_style_error",
-			error_fields_class: "error_fields_class",
-			exit_after_first_error: false,
-			rules: [{
-				field: "username",
-				min_length: {
-					value: 1,
-					message: empt
-				},
-				max_length: {
-					value: 160,
-					message: to_lng
-				}
-			}, {
-				field: "email",
-				min_length: {
-					value: 7,
-					message: empt_mail
-				},
-				max_length: {
-					value: 60,
-					message: to_lng_mail
-				},
-				mask: {
-					value: "^([a-z0-9_\-]+\\.)*[a-z0-9_\\-]+@[a-z0-9_\-]+(\\.[a-z0-9_\-]+)*\\.[a-z]{2,6}$",
-					message: incor
-				}
-			}, {
-				field: "message",
-				min_length: {
-					value: 1,
-					message: mes_empt
-				},
-				max_length: {
-					value: 200,
-					message: to_lng_mes
-				}
-			}]
-		});
-		if (!error) {
-			var user_name = jQuery(".sc_contact_form #sc_contact_form_username").val();
-			var user_email = jQuery(".sc_contact_form #sc_contact_form_email").val();
-			var user_site = jQuery(".sc_contact_form #sc_contact_form_site").val();
-			var user_msg = jQuery(".sc_contact_form #sc_contact_form_message").val();
-			var data = {
-				action: "submit_contact_form",
-				nonce: "e1f9461bc9",
-				user_name: user_name,
-				user_email: user_email,
-				user_site: user_site,
-				user_msg: user_msg
-			};
-			jQuery.post("include/sendmail.php", data, userSubmitFormResponse, "text");
-		}
-	}
+	//function userSubmitForm() {
+		//var error = formValidate(jQuery(".sc_contact_form form"), {
+			//error_message_show: true,
+			//error_message_time: 5000,
+			//error_message_class: "sc_infobox sc_infobox_style_error",
+			//error_fields_class: "error_fields_class",
+			//exit_after_first_error: false,
+			//rules: [{
+				//field: "username",
+				//min_length: {
+					//value: 1,
+					//message: empt
+				//},
+				//max_length: {
+					//value: 160,
+					//message: to_lng
+				//}
+			//}, {
+				//field: "email",
+				//min_length: {
+					//value: 7,
+					//message: empt_mail
+				//},
+				//max_length: {
+					//value: 60,
+					//message: to_lng_mail
+				//},
+				//mask: {
+					//value: "^([a-z0-9_\-]+\\.)*[a-z0-9_\\-]+@[a-z0-9_\-]+(\\.[a-z0-9_\-]+)*\\.[a-z]{2,6}$",
+					//message: incor
+				//}
+			//}, {
+				//field: "message",
+				//min_length: {
+					//value: 1,
+					//message: mes_empt
+				//},
+				//max_length: {
+					//value: 200,
+					//message: to_lng_mes
+				//}
+			//}]
+		//});
+		//if (!error) {
+			//var user_name = jQuery(".sc_contact_form #sc_contact_form_username").val();
+			//var user_email = jQuery(".sc_contact_form #sc_contact_form_email").val();
+			//var user_site = jQuery(".sc_contact_form #sc_contact_form_site").val();
+			//var user_msg = jQuery(".sc_contact_form #sc_contact_form_message").val();
+			//var data = {
+				//action: "submit_contact_form",
+				//nonce: "e1f9461bc9",
+				//user_name: user_name,
+				//user_email: user_email,
+				//user_site: user_site,
+				//user_msg: user_msg
+			//};
+			//jQuery.post("include/sendmail.php", data, userSubmitFormResponse, "text");
+		//}
+	//}
 	
-	function userSubmitFormResponse(response) {
-		var rez = JSON.parse(response);
-		jQuery(".sc_contact_form .result")
-			.toggleClass("sc_infobox_style_error", false)
-			.toggleClass("sc_infobox_style_success", false);
-		if (rez.error == "") {
-			jQuery(".sc_contact_form .result").addClass("sc_infobox_style_success").html("Your message sended!");
-			setTimeout("jQuery('.sc_contact_form .result').fadeOut(); jQuery('.sc_contact_form form').get(0).reset();", 3000);
-		} else {
-			jQuery(".sc_contact_form .result").addClass("sc_infobox_style_error").html("Transmit failed! " + rez.error);
-		}
-		jQuery(".sc_contact_form .result").fadeIn();
-	}
+	//function userSubmitFormResponse(response) {
+		//var rez = JSON.parse(response);
+		//jQuery(".sc_contact_form .result")
+			//.toggleClass("sc_infobox_style_error", false)
+			//.toggleClass("sc_infobox_style_success", false);
+		//if (rez.error == "") {
+			//jQuery(".sc_contact_form .result").addClass("sc_infobox_style_success").html("Your message sended!");
+			//setTimeout("jQuery('.sc_contact_form .result').fadeOut(); jQuery('.sc_contact_form form').get(0).reset();", 3000);
+		//} else {
+			//jQuery(".sc_contact_form .result").addClass("sc_infobox_style_error").html("Transmit failed! " + rez.error);
+		//}
+		//jQuery(".sc_contact_form .result").fadeIn();
+	//}
 	
 	
 		//read cookies

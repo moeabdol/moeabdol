@@ -15,6 +15,9 @@ group :development, :test do
   gem 'capybara', '~> 2.5.0'
   gem 'factory_girl_rails', '~> 4.5.0'
   gem 'pry-rails', '~> 0.3.4'
+  gem 'capistrano-rails', '~> 1.1.3'
+  gem 'capistrano-rvm', '~> 0.1.2'
+  gem 'capistrano3-unicorn', '~> 0.2.1'
 end
 
 group :development do
@@ -31,3 +34,4 @@ gem 'simple_form', '~> 3.2.0'
 gem 'font-awesome-rails', '~> 4.4.0.0'
 gem 'jquery-turbolinks', '~> 2.1.0'
 gem 'figaro', '~> 1.1.1'
+gem 'unicorn', '~> 4.9.0'

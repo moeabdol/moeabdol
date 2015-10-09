@@ -1,0 +1,65 @@
+%section#profile.section.profile_section.first.odd
+  = link_to root_path, id: "blog_page_link" do
+    %span.icon= fa_icon "home"
+    %span.label Home
+
+  .section_header.project_section_header.opened
+    %h2.section_title.project_section_title.vis
+      %strong
+        %span.icon.icon-briefcase= fa_icon "briefcase"
+        %span.section_name Projects
+
+  #primary.content_area
+    #content.site_content.post_content{ role: "main" }
+      %section.section.post_section.blog_section
+        .section_header.post_section_header
+        .section_body.post_section_body
+          %article.post
+            %h3.post_title Principle Component Analysis
+
+            .post_thumb
+              = image_tag "pca_pic.png", alt: "msales"
+
+            .content_text
+              %p
+                = link_to "Saudi Aramco",
+                          "http://www.saudiaramco.com/en/home.html"
+                is the world's leading energy provider. It is the richest
+                company in the world with an annual revenue of US $378 billion
+                (2014). It extracts crude Oil and Gas and refines them to a
+                multitude of derivative products.
+              %br
+              %p
+                Being a dinosaur of a company that it is, everything that Aramco
+                employes and uses is custom-built. To give you a sense of what
+                I'm talking about, take for example databases. The database
+                they use in their engineering departments are neither relational
+                nor document-based. They are real-time databases and are
+                time-based.  That is because the company is wired to hundreds of
+                refineries with hundreds of thousands of devices and sensors
+                within each of these refinaries.
+              %br
+              %p
+                The great thing was that at my department (Process and Controllers
+                Systems) we had easy and instant access to millions of records
+                of historical and continious real-time data. My mission was to
+                extract data, discover patterns, and distill knowledge. The
+                devices and sensors located at the refineries collected data
+                such as temperature,humedity, pressure, etc. So at any given
+                point of time, each sensor has multi-dimensional data
+                attributes.
+              %br
+              %p
+                With the help of many engineers, I have built in-house
+                applications that collects, filters, cleans, and then reveals
+                patterns. We had to account for noise in the data. The nose
+                being the result of malfunctioning sensors and/or misadjusted
+                valves and knobs on these devices. Our criterea was to discover
+                abnormalities in these devices. I used the PCA (Principle
+                Component Analysis) algorithm to reduce dimensionality of data
+                and reveal data with highest variance. High variance demonstrate
+                instability in the device reporting these data, this can be due
+                to misadjustment (which gets fixed) or malfunction (which gets
+                replaced). Having done so this technique is proactive as it
+                help reveals problems in the field before it gets any more
+                serious.

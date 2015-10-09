@@ -26,3 +26,21 @@
     }
   }
 }
+
+.project_section_header {
+  .project_section_title {
+    span.icon.icon-briefcase {
+      background-color: #ffbc38;
+    }
+
+    span.section_name {
+      background-color: #ffbc38;
+      position: relative;
+      display: block;
+      width: 123px;
+      height: 60px;
+      line-height: 59px;
+      padding-left: 30px;
+    }
+  }
+}

@@ -9,4 +9,16 @@ class HomeController < ApplicationController
       format.js
     end
   end
+
+  def msales
+  end
+
+  def livestock
+  end
+
+  def pca
+  end
+
+  def pos
+  end
 end

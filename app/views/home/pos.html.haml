@@ -1,0 +1,44 @@
+%section#profile.section.profile_section.first.odd
+  = link_to root_path, id: "blog_page_link" do
+    %span.icon= fa_icon "home"
+    %span.label Home
+
+  .section_header.project_section_header.opened
+    %h2.section_title.project_section_title.vis
+      %strong
+        %span.icon.icon-briefcase= fa_icon "briefcase"
+        %span.section_name Projects
+
+  #primary.content_area
+    #content.site_content.post_content{ role: "main" }
+      %section.section.post_section.blog_section
+        .section_header.post_section_header
+        .section_body.post_section_body
+          %article.post
+            %h3.post_title Point of Sales
+
+            .post_thumb
+              = image_tag "mec", alt: "msales"
+
+            .content_text
+              %p
+                = link_to "Modern Electronics Company",
+                          "http://alfaisaliah.com/afg2/?p=5213#"
+                (foremerly Sony Gulf) initiated a
+                major project to replace all their traditional casheir systems
+                located at their outlets with digital point of sales systems.
+                The new POS system is integrated with SAP ERP system as the
+                back-end, so sales information would flow back and forth
+                instantly. Any sales information would flow to the back-end and
+                higher management can now make instant marketing, sales, and
+                financial decisions. On the other hand when decisions are made
+                the rules flow down again to the front-end reflecting the latest
+                decisions made by management.
+              %br
+              %p
+                During this project I was MEC's technical consultant. Having to
+                deal with all technical aspects of the project starting from
+                which POS system to acquire, making available the digital
+                infrastructure for the project, shaping and gathering
+                requirements with MEC's management and finally communicating
+                with SAP's team on our back-end requirements.

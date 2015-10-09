@@ -1,0 +1,51 @@
+%section#profile.section.profile_section.first.odd
+  = link_to root_path, id: "blog_page_link" do
+    %span.icon= fa_icon "home"
+    %span.label Home
+
+  .section_header.project_section_header.opened
+    %h2.section_title.project_section_title.vis
+      %strong
+        %span.icon.icon-briefcase= fa_icon "briefcase"
+        %span.section_name Projects
+
+  #primary.content_area
+    #content.site_content.post_content{ role: "main" }
+      %section.section.post_section.blog_section
+        .section_header.post_section_header
+        .section_body.post_section_body
+          %article.post
+            %h3.post_title mSales
+
+            .post_thumb
+              = image_tag "msales_screenshot", alt: "msales"
+
+            .content_text
+              %p
+                = link_to "Al-Safi",
+                          "http://www.alfaisaliah.com/index0f0e.html?id=125"
+                is a world leading nutrition company. In 1998, it was
+                awarded the guinness world record for being the largest
+                integrated dairy farm in the world.
+              %br
+              %p
+                One of the major software applications employed by Al-Safi is
+                mSales. mSales is a sales application for Al-Safi. The main
+                purpose of mSales is to keep track of all sales operations
+                executed on a daily basis by Al-Safi sales men to satisfy dairy
+                demands accross all Gulf countries.
+              %br
+              %p
+                There are two main parts of the mSales application. First, The
+                front-end which handles collecting sales data using handheld
+                devices onboard every Safi distribution van. Second, the
+                back-end application and database which handles the processing
+                and storage of operations data.
+              %br
+              %p
+                During my time with Al-Faisaliah, I worked directly with sales
+                and marketing executives and personnel. Together we helped
+                extend mSales and introduce new features; such as, adding
+                loyalty prorams to mSales. This functionality identifies
+                long-standing customers and in return offers them our products
+                at cheaper prices.

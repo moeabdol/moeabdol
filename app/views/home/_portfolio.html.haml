@@ -11,33 +11,44 @@
       %h3.title
         %span.category_title_icon.yellow
         Some of my projects
+
       .portfolio_items
         %article.post.portfolio_post.portfolio_post_1.first.even.category_4.category_6
           .post_pic.portfolio_post_pic
-            = link_to "http://placehold.it/800x400", class: "w_hover img-link img-wrap" do
+            = link_to home_msales_path, class: "w_hover img-link img-wrap" do
               %span.overlay
               %span.link-icon
-              = image_tag "http://placehold.it/252x174", alt: "Portfolio item 14"
+              = image_tag "msales.png", alt: "msales"
           %h4.post_title
-            = link_to "Portfolio item 14", "#"
-          %h5.post_subtitle Web, Photo
+            = link_to "Al-Safi Danone", home_msales_path
+          %h5.post_subtitle mSales
 
         %article.post.portfolio_post.portfolio_post_1.first.even.category_4.category_6
           .post_pic.portfolio_post_pic
-            = link_to "http://placehold.it/800x400", class: "w_hover img-link img-wrap" do
+            = link_to home_livestock_path, class: "w_hover img-link img-wrap" do
               %span.overlay
               %span.link-icon
-              = image_tag "http://placehold.it/252x174", alt: "Portfolio item 14"
+              = image_tag "livestock.png", alt: "livestock"
           %h4.post_title
-            = link_to "Portfolio item 14", "#"
-          %h5.post_subtitle Web, Photo
+            = link_to "Al-Safi Danone", home_livestock_path
+          %h5.post_subtitle Livestock Valuation
 
         %article.post.portfolio_post.portfolio_post_1.first.even.category_4.category_6
           .post_pic.portfolio_post_pic
-            = link_to "http://placehold.it/800x400", class: "w_hover img-link img-wrap" do
+            = link_to home_pca_path, class: "w_hover img-link img-wrap" do
               %span.overlay
               %span.link-icon
-              = image_tag "http://placehold.it/252x174", alt: "Portfolio item 14"
+              = image_tag "pca.png", alt: "pca"
           %h4.post_title
-            = link_to "Portfolio item 14", "#"
-          %h5.post_subtitle Web, Photo
+            = link_to "Saudi Aramco", home_pca_path
+          %h5.post_subtitle Multi-dimensional PCA
+
+        %article.post.portfolio_post.portfolio_post_1.first.even.category_4.category_6
+          .post_pic.portfolio_post_pic
+            = link_to home_pos_path, class: "w_hover img-link img-wrap" do
+              %span.overlay
+              %span.link-icon
+              = image_tag "pos.png", alt: "pos"
+          %h4.post_title
+            = link_to "Sony Gulf", home_pos_path
+          %h5.post_subtitle POS
